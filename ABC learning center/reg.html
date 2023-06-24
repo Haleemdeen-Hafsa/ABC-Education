@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="reg.css">
+    <style>
+            body{
+                background-color: white;
+            }
+    </style>
+   <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["Fname"]["Iname"]["DOB"]["phone"]["mail"]["address"]["qualification"]["course"]["month"].value;
+      if (x == "") {
+        alert("Fill to complete");
+        return false;
+      }
+    }
+    </script>
+   
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <!----navigation bar---->
+            <img src="logo1.png.jpg" style="margin-top: 29px; margin-left: -30px;">
+            <ul class="nav-links" style="margin-right: -60px;">
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="home.html">Home</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="about.html">About</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="courses.html" >Courses</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="contact.html" >Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <body>
+        
+        <!-------body------>
+        <div id="site">
+            <div id="site">
+                <h2 style="text-align: center; font-size: 280%; color: rgb(28,28,58); margin-top: 100px;"> STUDENT REGISTRATION FORM</h2>
+                <div class="form">
+                <form action="" name="my form" onsubmit=" return validateform()" style="margin-left: 175px; margin-top: 115px; margin-bottom: 50px; font-weight: bold;" >
+                  
+                    <label for="Fname"> Full Name:
+                          <input type="text" name="" id="Fname" required> </label>
+                    <br><br><br>
+                   
+                    <label for="Iname">Name with Initial:
+                           <input type="text" name="" id="Iname" required> </label>
+                           <br><br><br>      
+                    
+                        <label for="DOB">DOB:
+                            <input type="date" id="DOB" required>  </label>
+                            <br><br><br>
+                   
+                    
+                    
+                        <label for="phone">Phone Number:
+                         <input type="phone" placeholder="(+94)***********" id="phone" required>
+                        </label> <br><br><br>
+                    
+                        <label for="mail">E-mail:
+                            <input type="text" placeholder="example123@gmail.com" id="mail" required>
+                        </label> <br><br><br>
+                    
+                        <label for="address">Home-Address:
+                            <input type="text" name="" id="address" required>
+                        </label> <br><br><br>
+                    
+                    
+                        <label for="qualification">Educational qualifications:
+                            <input type="text" name="" id="qualification"required>
+                        </label> <br><br><br>
+                    
+                    
+                        <label for="course">Course:
+                            <input type="text" placeholder="prefered course" id="course" required>
+                        </label> <br><br><br>
+                    
+                        <label for="month">Prefered intake month:
+                            <input type="text" placeholder="prefered intake" id="month" required>
+                        </label> <br><br><br>
+                    
+                         <br><br><br>
+                        <button type="submit" onclick="save();"   ondblclick="window.location.href='thank.html'"style="height: 30px; width: 80px;">Submit</button>
+                        <script src="register.js"></script>
+                       
+                       
+                    
+                </form>
+                
+           
+           
+           </body>
+           <footer>
+                
+            <!------footer column 1-->
+             <div class="column">
+                 <img src="logo1.png.jpg" width="60px" height="50px">
+             <p style="text-align:left; font-size: 20px; color: white;">No.285, Roman way,<br>Oxfordshire<br>England<br><br>
+             +44 381 192 653<br>
+             info@abc.edu<br>
+         <img src="fb.png" height="30px" width="30px">
+         <img src="in.png" height="30px" width="30px">
+         <img src="ya.png" height="30px" width="30px">  </p></div>
+          
+          
+           <!------footer column 2------->
+           <div id="col2" style="margin-left: 155px;">
+            <div class="col1" style="margin-left: 499px; margin-top: -192px; margin-bottom: 65px;">
+         <h3 style="font-weight: bold; color: white; margin-bottom: 20px; letter-spacing: 1px; margin-left: -19px;"> COURSES</h3>
+      <p><a href=Javadt.html target="_blank" style="text-decoration: none;color: white; font-size: 17px;margin-left: -20px; ">Java-programming</a><br>
+         <a href=Net-programming.html target="_blank" style="text-decoration: none; color: white; font-size: 17px; margin-left: -20px;">Net-programming</a><br>
+        <a href=Ms-Office.htm target="_blank" style="text-decoration: none; color: white; font-size: 17px; margin-left: -19px;">Ms-office</a><br>
+       <a href=HTMLdt.html target="_blank" style="text-decoration: none;color: white; font-size: 17px; margin-left: -19px; ">HTML</p>
+    </div>
+        <div class="col2" style="margin-left: 715px; margin-top: -267px;">
+            <h3 style="font-weight: bold; margin-bottom: 20px; letter-spacing: 1px;">USEFUL LINKS</h3>
+            <p><a href=Sitemap.html style="text-decoration: none; color: white; font-size: 17px; margin-left: -1px;">Sitemap</a><br>
+                <a href=Privacy.html style="text-decoration: none; color: white; font-size: 17px; margin-left: -1px;">Privacypolicy</a></p>
+        </div>
+    </footer>
+    </html>
+
+        

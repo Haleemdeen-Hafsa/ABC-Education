@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-details</title>
+    <link rel="stylesheet" href="HTMLdt.css">
+    <style>
+            body{
+                background-color: white;
+            }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $(".list").toggle();
+          })
+          
+          $("#time").click(function(){
+            $(".week").toggle();
+          });
+
+          $("#fees").click(function(){
+            $(".fee,.para,.full,.part").toggle();
+          });
+        })
+        </script>
+    
+    
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <!----navigation bar---->
+            <img src="logo1.png.jpg" style="margin-top: 29px; margin-left: -30px;">
+            <ul class="nav-links" style="margin-right: -60px;">
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="home.html">Home</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="about.html">About</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="courses.html">Courses</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="contact.html">Contacts</a></li>
+                <li style="padding-right: 15px; "><button  style="height:30px; width: 90px; font-size: 15px; font-weight: bold;"><a href="reg.html">Register</a></button></a></button></li>
+            </ul>
+        </nav>
+    </div>
+    <body>
+        <!-------body------>
+        <div id="site">
+            <div class="site1">
+            <h1> HTML-coding
+            <img src="html.png" height="140px" width="170px"></h1>
+            </div>
+            <div class="about">
+                <h2>About course</h2>
+                <div class="college">
+                    <img src="htmlbk.png" height="350px" width="500px">
+                </div>
+                <p style="width: 700px; margin-bottom: 40px;"> The HyperText Markup Language or HTML is the 
+                    standard markup language for documents designed to be displayed in a web browser. It can be assisted by
+                     technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+                    Web browsers receive HTML documents from a web server or
+                     from local storage and render the documents into multimedia web pages.
+                      HTML describes the structure of a web page semantically and originally included 
+                      cues for the appearance of the document.
+                     HTML elements are the building blocks of HTML pages. With HTML constructs, images and
+                      other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, 
+                    paragraphs, lists, links, quotes and other items.</p>
+            
+
+                     <!------advantages----->
+                <h2 id="hide">Advantages</h2>
+                    <ul class="list" style="width: 950px;">
+                        <li style="margin-bottom: 20px;">HTML is easy to learn. HTML was designed to be easy to use and is therefore easy to write, compile, 
+                            debug, and learn than other programming languages.</li>
+                        <li style="margin-bottom: 20px;">HTML is object-oriented. This allows you to create modular programs and reusable code.</li>   
+                        <li style="margin-bottom: 20px;">HTML is platform-independent.<br>One of the most significant advantages of Java is its 
+                            ability to move easily from one computer system to another. The ability to run the same 
+                            program on many different systems is crucial to World Wide Web software, and Java succeeds
+                             at this by being 
+                            platform-independent at both the source and binary levels.</li>
+                        <li style="margin-bottom: 45px;">ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, placeat repudiandae! 
+                            Consequuntur animi mollitia voluptatum doloribus fuga dolores 
+                            doloremque quisquam itaque corrupti. Magnam, omnis similique!</li> 
+                    </ul>
+                    <!-----Duration----->
+                <h2 id="time">Duration</h2>
+                <ul class=week type="none">
+                    <li style="margin-bottom: 30px; font-weight: bold;">3 months- full time</li>
+                    <li style="margin-bottom: 45px;font-weight: bold;">6 months- Part time</li>
+                </ul>
+                <!-----fees----->
+                <h2 id="fees">Fees</h2>
+                <ul class="fee" type="none">
+                    <li style= "margin-bottom: 20px;">Total course -$600</li>
+                </ul>
+                <p class="para" style="margin-bottom: 20px; font-weight: bold;">Installment plans available</p>
+                <ul class="full" type="none">
+                    <li style="font-weight: bold; margin-bottom: 15px; margin-left: 95px;">:Full time package</li>
+                    <li style="margin-bottom: 10px; margin-left: 120px;">Monthly installment-$200</li>
+                    <li style="margin-bottom: 20px; margin-left: 120px;">2 installments-$300</li>
+                </ul>
+                <ul class="part" type="none">
+                    <li style="margin-bottom: 15px; font-weight: bold; margin-left: 95px;">:Part time package</li>
+                    <li style="margin-bottom: 45px; margin-left: 120px;">3 installments-$200</li>
+                </ul>
+            </div>
+           
+           <footer>
+                
+            <!------footer column 1-->
+             <div class="column">
+                 <img src="logo1.png.jpg" width="60px" height="50px">
+             <p style="text-align:left; font-size: 20px; color: white;">No.285, Roman way,<br>Oxfordshire<br>England<br><br>
+             +44 381 192 653<br>
+             info@abc.edu<br>
+         <img src="fb.png" height="30px" width="30px">
+         <img src="in.png" height="30px" width="30px">
+         <img src="ya.png" height="30px" width="30px">  </p></div>
+          
+          
+           <!------footer column 2------->
+           <div id="col2" style="margin-left: 155px;">
+            <div class="col1" style="margin-left: 499px; margin-top: -192px; margin-bottom: 65px;">
+         <h3 style="font-weight: bold; color: white; margin-bottom: 20px; letter-spacing: 1px; margin-left: -19px;"> COURSES</h3>
+      <p><a href=Javadt.html target="_blank" style="text-decoration: none;color: white; font-size: 17px;margin-left: -20px; ">Java-programming</a><br>
+         <a href=Net-programming.html target="_blank" style="text-decoration: none; color: white; font-size: 17px; margin-left: -20px;">Net-programming</a><br>
+        <a href=Ms-Office.htm target="_blank" style="text-decoration: none; color: white; font-size: 17px; margin-left: -19px;">Ms-office</a><br>
+       <a href=HTMLdt.html target="_blank" style="text-decoration: none;color: white; font-size: 17px; margin-left: -19px; ">HTML</p>
+    </div>
+        <div class="col2" style="margin-left: 715px; margin-top: -267px;">
+            <h3 style="font-weight: bold; margin-bottom: 20px; letter-spacing: 1px;">USEFUL LINKS</h3>
+            <p><a href=Sitemap.html style="text-decoration: none; color: white; font-size: 17px; margin-left: -1px;">Sitemap</a><br>
+                <a href=Privacy.html style="text-decoration: none; color: white; font-size: 17px; margin-left: -1px;">Privacypolicy</a></p>
+        </div>
+    </footer>
+    </html>

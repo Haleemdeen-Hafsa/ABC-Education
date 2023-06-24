@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-schedule</title>
+    <link rel="stylesheet" href="HTMLsc.css">
+    <style>
+            body{
+                background-color: white;
+            }
+    </style>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+     <script>
+     $(document).ready(function(){
+      $("#button").click(function(){
+        alert("submitted")
+      });
+      $("#full").hover(function(){
+            $(".list").show();
+          });
+      $("#part").mouseenter(function(){
+            $(".part-list").show();
+          });    
+    })
+      </script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <!----navigation bar---->
+            <img src="logo1.png.jpg" style="margin-top: 29px; margin-left: -30px;">
+            <ul class="nav-links" style="margin-right: -60px;">
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="home.html">Home</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="about.html">About</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="courses.html">Courses</a></li>
+                <li style="padding-right: 15px; font-size: 22px; font-weight: bold;"><a href="contact.html">Contacts</a></li>
+                <li style="padding-right: 15px; "><button  style="height:30px; width: 90px; font-size: 15px; font-weight: bold;"><a href=reg.html">Register</a></button></a></button></li>
+            </ul>
+        </nav>
+    </div>
+    <body>
+        <!-------body------>
+        <div id="site">
+            <div class="site1">
+            <h1> HTML-coding
+            <img src="html.png" height="140px" width="170px"></h1>
+            </div>
+            <div class="about">
+                <h2 style="margin-left: 215px; font-size: 30px; margin-bottom: 70px;">COMMENCEMENT</h2>
+                <div class="college">
+                    <img src="htmlbk.png" height="350px" width="700px">
+                </div>
+                
+                <h3 id="full" style="font-weight: bold; margin-left: 60px; margin-bottom: 15px; font-size: 22px;">Full time:</h3>
+                <ul class="list" type="none" style="display: none;">
+                <li style="font-weight: bold; margin-left: 100px; margin-bottom: 10px;">New intakes-</li>
+                <li style="margin-left: 90px; margin-bottom: 15px;" >January, April, August, December</li>
+                <li style="font-weight: bold; margin-left: 100px; margin-bottom: 10px;">Days and Time</li>
+                <li style="margin-left: 90px; margin-bottom: 50px;">Monday to Friday- 9am to 6pm</li>
+            </ul>
+           
+                <h3  id="part" style="font-weight: bold;margin-left: 60px; margin-bottom: 15px; font-size: 22px; ">Part time:</h3>
+                <ul class="part-list" type="none" style="display: none;">
+            <li style="font-weight: bold; margin-left: 100px; margin-bottom: 10px;">New intakes-</li>
+                <li style="margin-left: 90px; margin-bottom: 15px;" >January, July, October</li>
+                <li style="font-weight: bold; margin-left: 100px; margin-bottom: 10px;">Days and Time</li>
+                <li style="margin-left: 90px; margin-bottom: 90px;" >Saturday and sunday- 9am to 3pm</li>
+            </ul> 
+
+                  <div clss="form">
+                    <h2 style="font-size: 25px; margin-left: 215px; margin-bottom: 60px;">Inquire for more information!!</h2>
+                    <form>
+                        <table style="margin-left: 150px;">
+                            <tr>
+                                <td class="name">Name:</td>
+                                <td >
+                                    <input type="text" placeholder="name" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td>
+                                    <input type="mail" placeholder="email" name="name">
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                    <td>Message:</td>
+                                    <td>
+                                        <input type="message" placeholder="Message" name="">
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>
+                                        <input id="button" type="submit" value="submit" name=""> 
+                                    
+                                    </td>
+                                </tr>
+                            </tr>
+                        </table>
+                                    
+                    </form>
+                  </div></div></div></body>
+           
+           <footer>
+                
+            <!------footer column 1-->
+             <div class="column">
+                 <img src="logo1.png.jpg" width="60px" height="50px">
+             <p style="text-align:left; font-size: 20px; color: white;">No.285, Roman way,<br>Oxfordshire<br>England<br><br>
+             +44 381 192 653<br>
+             info@abc.edu<br>
+         <img src="fb.png" height="30px" width="30px">
+         <img src="in.png" height="30px" width="30px">
+         <img src="ya.png" height="30px" width="30px">  </p></div>
+          
+          
+           <!------footer column 2------->
+           <div id="col2" style="margin-left: 155px;">
+            <div class="col1" style="margin-left: 499px; margin-top: -192px; margin-bottom: 65px;">
+         <h3 style="font-weight: bold; color: white; margin-bottom: 25px; letter-spacing: 1px; margin-left: -19px;"> COURSES</h3>
+      <p><a href=Javadt.html target="_blank" style="text-decoration: none;color: white; font-size: 17px;margin-left: -20px; ">Java-programming</a><br>
+         <a href=Net-programming.html target="_blank" style="text-decoration: none; color: white; font-size: 17px; margin-left: -20px;">Net-programming</a><br>
+        <a href=Ms-Office.htm target="_blank" style="text-decoration: none; color: white; font-size: 17px; margin-left: -19px;">Ms-office</a><br>
+       <a href=HTMLdt.html target="_blank" style="text-decoration: none;color: white; font-size: 17px; margin-left: -19px; ">HTML</p>
+    </div>
+        <div class="col2" style="margin-left: 715px; margin-top: -267px;">
+            <h3 style="font-weight: bold; margin-bottom: 20px; letter-spacing: 1px;">USEFUL LINKS</h3>
+            <p><a href=Sitemap.html style="text-decoration: none; color: white; font-size: 17px; margin-left: -1px;">Sitemap</a><br>
+                <a href=Privacy.html style="text-decoration: none; color: white; font-size: 17px; margin-left: -1px;">Privacypolicy</a></p>
+        </div>
+    </footer>
+    </html>
